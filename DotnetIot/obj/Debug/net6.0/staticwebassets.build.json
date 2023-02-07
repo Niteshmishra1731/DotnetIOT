@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VvSQc6ZVd90tlPbsJSnk0Nbg0Y8PpxbUMfttsUK7KOQ=",
+  "Source": "DotnetIot",
+  "BasePath": "_content/DotnetIot",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

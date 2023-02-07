@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ARUTAMLTH" Version="1.0.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.21.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.13" />
+    <PackageReference Include="Microsoft.Azure.Devices" Version="1.38.2" />
+    <PackageReference Include="Microsoft.Azure.Devices.Client" Version="1.41.3" />
+    <PackageReference Include="Microsoft.Graph" Version="4.51.0" />
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.3-beta1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+</Project>
