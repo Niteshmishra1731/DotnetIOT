@@ -19,3 +19,5 @@
         artifact: 'manifests' 
 
         publishLocation: 'pipeline' 
+        
+        https://dev.azure.com/Nitesh1672757387482/azstorageapi/_build/results?buildId=20&view=results
