@@ -1,23 +1,35 @@
-- task: CopyFiles@2 
-
-      inputs: 
-
-        SourceFolder: 'manifests/' 
-
-        Contents: '**/*.yml' 
-
-        TargetFolder: '$(Pipeline.Workspace)/manifests' 
-
- 
-
-    - task: PublishPipelineArtifact@1 
-
-      inputs: 
-
-        targetPath: '$(Pipeline.Workspace)/manifests' 
-
-        artifact: 'manifests' 
-
-        publishLocation: 'pipeline' 
-        
-        https://dev.azure.com/Nitesh1672757387482/azstorageapi/_build/results?buildId=20&view=results
+apiVersion : apps/v1 
+kind: Deployment 
+metadata: 
+  name: iotdeviceapi  
+spec: 
+  replicas: 1 
+  selector: 
+    matchLabels: 
+      app: iotdeviceapi 
+  template: 
+    metadata: 
+      labels: 
+        app: iotdeviceapi  
+    spec: 
+      containers: 
+        - name: iotdeviceapi  
+          image: iotdeviceapiacr.azurecr.io/iotdeviceapi 
+          ports: 
+          - containerPort: 80
+          
+          
+          
+          service
+          
+          Aks cluster: iotdeviceapi
+apiVersion: v1
+    kind: Service
+    metadata:
+        name: iotdeviceapi
+    spec:
+        type: LoadBalancer
+        ports:
+        - port: 80 
+        selector:
+            app: iotdeviceapi
